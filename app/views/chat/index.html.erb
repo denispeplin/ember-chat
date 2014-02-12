@@ -1,0 +1,23 @@
+<script type="text/x-handlebars" data-template-name="application">
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+        {{outlet}}
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/x-handlebars" data-template-name="messages">
+  <ul id="chat">
+    {{#each}}
+      <li>{{body}}</li>
+    {{/each}}
+  </ul>
+
+  <form class="form-inline" {{action create on="submit"}}>
+    {{input class="message_body" value=body type="text"}}
+    {{input class="btn" type="submit" value="Post"}}
+  </form>
+</script>
+

@@ -1,4 +1,5 @@
 EmberChat::Application.routes.draw do
+  root "chat#index"
   resources :messages
 
   # The priority is based upon order of creation: first created -> highest priority.

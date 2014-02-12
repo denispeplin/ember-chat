@@ -1,0 +1,15 @@
+ul#chat {
+  list-style: none;
+  width: 500px;
+  height: 300px;
+  border: solid 1px #e6e6e6;
+  overflow: auto;
+  margin: 5px 0px;
+  li {
+    padding: 0px 5px;
+  }
+}
+
+input.message_body {
+  width: 430px;
+}
