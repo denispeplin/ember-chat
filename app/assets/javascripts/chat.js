@@ -15,7 +15,7 @@ App.MessagesRoute = Ember.Route.extend({
       var self = this;
       this.eventSource.addEventListener('message', function(e) {
         var data = $.parseJSON(e.data);
-        if (data.id != self.get('savedId')) {
+        if (data.id != self.controllerFor('messages').get('savedId')) {
           self.store.createRecord('message', data);
         }
       });
