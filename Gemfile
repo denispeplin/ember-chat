@@ -5,6 +5,8 @@ gem 'rails', '4.0.2'
 
 gem 'puma'
 
+gem 'redis'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
